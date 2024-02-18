@@ -38,7 +38,7 @@ if data:
 
     chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.9)
     systemMessage = SystemMessage(
-        content="You are a senior code analyst. Provide detailed suggestions to improve the below given python code."
+        content="You are a senior code analyst. Provide detailed suggestions to improve the below given python code by mentioning the existing code line by line with proper indent. Explain what were the issues in systematic point-wise manner."
     )
 
     humanMessage = HumanMessage(content=fetched_data)
